@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange - Kichina</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
+  <script src="language.js"></script>
+</head>
+
+<body class="exchange-page">
+  <div class="language-bar">
+    <a href="#" class="active">中文</a>
+    <a href="#">English</a>
+    <a href="#">Português</a>
+    <a href="#">Français</a>
+    <a href="#">kiswahili</a>
+    <a href="#">عربي</a>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="homepage.html" class="nav-item" data-translate="homepage">Homepage</a>
+        <a href="about.html" class="nav-item" data-translate="aboutUs">About Us</a>
+        <a href="course.html" class="nav-item" data-translate="chineseLearning">Chinese Learning Course</a>
+      </div>
+      <div class="logo">
+        <img src="assets/logo2.png" alt="Kichina Logo">
+        <span>Kichina</span>
+      </div>
+      <div class="nav-right">
+        <a href="exchange.html" class="nav-item active" data-translate="culturalExchange">Cultural Exchange Between
+          China and Africa</a>
+        <a href="#" class="nav-item" data-translate="customerService">Customer Service</a>
+        <a href="#" class="nav-item" data-translate="settings">Settings</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 上半部分：三个模块，左右放图片，中间放介绍 -->
+    <div class="top-section">
+      <div class="left-image">
+        <img src="assets/exchange/exchange1.png" alt="Image">
+      </div>
+      <div class="middle-intro">
+        <h2>Exchange Introduction</h2>
+        <p>这里是一些介绍内容。这里是一些介绍内容。这里是一些介绍内容。</p>
+        <p>这里是一些介绍内容。这里是一些介绍内容。这里是一些介绍内容。</p>
+      </div>
+      <div class="right-image">
+        <img src="assets/exchange/exchange2.png" alt="Image">
+      </div>
+    </div>
+
+    <!-- 中间部分：三个模块，左右放小图片 -->
+    <div class="middle-section">
+      <div class="left-small-image">
+        <img src="assets/exchange/left.png" alt="Image">
+      </div>
+      <div class="middle-carousel">
+        <div class="carousel-slide">
+          <img src="assets/exchange/1.png" alt="Picture 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/exchange/2.png" alt="Picture 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/exchange/3.png" alt="Picture 3">
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/exchange/4.png" alt="Picture 4">
+        </div>
+      </div>
+      <div class="right-small-image">
+        <img src="assets/exchange/right.png" alt="Image">
+      </div>
+    </div>
+
+    <!-- 视频部分 -->
+    <div class="video-section">
+      <h3>Video Recommendation</h3>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- 底部部分：四个模块 -->
+    <div class="bottom-section">
+      <div class="logo-section">
+        <img src="assets/logo2.png" alt="Kichina Logo">
+        <span>Kichina</span>
+      </div>
+      <div class="privacy-section">
+        <h3>Privacy</h3>
+        <ul>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="technical-support-section">
+        <h3>Technical Support</h3>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Course registration inquiry</a></li>
+        </ul>
+      </div>
+      <div class="social-media-section">
+        <h3>Social Media</h3>
+        <div class="social-icons">
+          <a href="#"><img src="#" alt="Instagram"></a>
+          <a href="#"><img src="#" alt="Weibo"></a>
+          <a href="#"><img src="#" alt="YouTube"></a>
+          <a href="#"><img src="#" alt="Bilibili"></a>
+          <a href="#"><img src="#" alt="Twitter"></a>
+          <a href="#"><img src="#" alt="Facebook"></a>
+          <a href="#"><img src="#" alt="RSS"></a>
+          <!-- 存放各种图标，目前还没有。。 -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new LanguageManager();
+      new Slider();
+    });
+  </script>
+</body>
+
+</html>
